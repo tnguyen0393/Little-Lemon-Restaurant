@@ -1,11 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      Home Page
-    </div>
+    <>
+      <nav></nav>
+      <header></header>
+      <main>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+        <section>
+
+        </section>
+      </main>
+      <footer></footer>
+    </>
   );
 }
 
