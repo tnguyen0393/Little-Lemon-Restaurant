@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection';
 import HiglightsSection from './components/HighlightsSection';
 import './App.css';
+import TestimonialSection from './components/TestimonialsSection';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Navbar />
         <HeroSection />
         <HiglightsSection />
+        <TestimonialSection />
       </main>
     </ChakraProvider>
 
