@@ -5,6 +5,8 @@ import HeroSection from './components/HeroSection';
 import HiglightsSection from './components/HighlightsSection';
 import './App.css';
 import TestimonialSection from './components/TestimonialsSection';
+import AboutSection from './components/AboutSection';
+import FooterSection from './components/FooterSection';
 
 function App() {
   return (
@@ -15,24 +17,10 @@ function App() {
         <HeroSection />
         <HiglightsSection />
         <TestimonialSection />
+        <AboutSection />
+        <FooterSection />
       </main>
     </ChakraProvider>
-
-    {/*Just a thought*/}
-      {/* <nav></nav>
-      <header></header>
-      <main>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-        <section>
-
-        </section>
-      </main>
-      <footer></footer> */}
     </>
   );
 }

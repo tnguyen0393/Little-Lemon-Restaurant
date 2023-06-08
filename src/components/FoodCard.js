@@ -1,47 +1,37 @@
 import {
     Card,
     CardBody,
-    Divider,
     CardFooter,
-    ButtonGroup,
     Stack,
     Heading,
     Text,
-    Button,
     Image,
+    Flex
   } from '@chakra-ui/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBiking } from '@fortawesome/free-solid-svg-icons';
 
-const FoodCard = () => {
+const FoodCard = ({menuItem}) => {
     return (
-    <Card maxW='sm'>
+    <Card bg={"#EDEFEE"} maxW='sm'>
         <CardBody>
             <Image
-            src='https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80'
-            alt='Green double couch with wooden legs'
+            src={menuItem.image}
+            alt={`Image of ${menuItem.name}`}
             borderRadius='lg'
             />
             <Stack mt='6' spacing='3'>
-            <Heading size='md'>Living room Sofa</Heading>
+            <Flex justifyContent="space-between">
+              <Heading size='md'>{menuItem.name}</Heading>
+                <Text color={"#E78A00"}>${menuItem.price}</Text>
+            </Flex>
             <Text>
-                This sofa is perfect for modern tropical spaces, baroque inspired
-                spaces, earthy toned spaces and for people who love a chic design with a
-                sprinkle of vintage design.
-            </Text>
-            <Text color='blue.600' fontSize='2xl'>
-                $450
+                {menuItem.description}
             </Text>
             </Stack>
         </CardBody>
-        <Divider />
         <CardFooter>
-            <ButtonGroup spacing='2'>
-            <Button variant='solid' colorScheme='blue'>
-                Buy now
-            </Button>
-            <Button variant='ghost' colorScheme='blue'>
-                Add to cart
-            </Button>
-            </ButtonGroup>
+            <Text>Order a delivery <FontAwesomeIcon size={"lg"} icon={faBiking} color={'#48742C'}/></Text>
         </CardFooter>
     </Card>
     )

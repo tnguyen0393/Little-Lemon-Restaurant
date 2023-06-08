@@ -4,12 +4,7 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const TestimonialCard = ({testimonial}) => {
     const {rating, userImage, userName, quote} = testimonial;
-
-    // const stars = Array(5).fill(0).map((_, index) =>
-    //     //<Icon as={FaStar} color={index < rating ? "yellow.400" : "gray.300"} />
-    //     <FontAwesomeIcon icone={faArrowRight} size="1x" />
-    // );
-
+    
     return (
         <Box
             maxW={'445px'}
