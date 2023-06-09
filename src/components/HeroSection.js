@@ -9,6 +9,7 @@ import {
     Image,
     IconButton,
   } from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom"
 import restaurantFood from "../assets/restauranfood.jpg"
 
 const HeroSection = () => {
@@ -42,7 +43,7 @@ const HeroSection = () => {
               </Text>
               <br />
               <Text as={"span"} color={"white"}>
-                Chicago
+                St. Paul
               </Text>
             </Heading>
             <Text color={"white"}>
@@ -51,17 +52,20 @@ const HeroSection = () => {
             <Stack
               spacing={{ base: 4, sm: 6 }}
               direction={{ base: "column", sm: "row" }}>
-              <Button
-                rounded={"md"}
-                size={"lg"}
-                fontWeight={"bold"}
-                px={6}
-                colorScheme={"red"}
-                bg={"#F4CE14"}
-                color={"black"}
-                _hover={{ bg: "red.500" }}>
-                Reserve a Table
-              </Button>
+                <ReactLink to="/reservation">
+                  <Button
+                  rounded={"md"}
+                  size={"lg"}
+                  fontWeight={"bold"}
+                  px={6}
+                  colorScheme={"red"}
+                  bg={"#F4CE14"}
+                  color={"black"}
+                  _hover={{ bg: "red.500" }}>
+                  Reserve a Table
+                </Button>
+                </ReactLink>
+
             </Stack>
           </Stack>
           <Flex

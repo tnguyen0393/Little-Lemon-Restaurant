@@ -6,7 +6,8 @@ import {
     Heading,
     Text,
     Image,
-    Flex
+    Flex,
+    Link
   } from '@chakra-ui/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBiking } from '@fortawesome/free-solid-svg-icons';
@@ -31,7 +32,10 @@ const FoodCard = ({menuItem}) => {
             </Stack>
         </CardBody>
         <CardFooter>
-            <Text>Order a delivery <FontAwesomeIcon size={"lg"} icon={faBiking} color={'#48742C'}/></Text>
+            <Link href={"#"} _hover={{textDecoration: "none", bg: "#F4CE14", }}>
+                Order a delivery
+                <FontAwesomeIcon size={"lg"} icon={faBiking} color={'#48742C'}/>
+            </Link>
         </CardFooter>
     </Card>
     )

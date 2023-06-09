@@ -8,8 +8,8 @@ const AboutSection = () => {
     <Container maxW={'7xl'} py={20} my={20}>
         <Grid templateColumns={{ base: "1fr", md: "1fr 1fr" }} gap={20}>
             <Stack spacing={3}>
-                <Heading as="h2">Our Story</Heading>
-                <Heading as="h3" size="md">Chicago</Heading>
+                <Heading as="h2" color={"#495E57"}>Our Little Story</Heading>
+                <Heading as="h3" size="md">The Love for Food</Heading>
                 <Text>Little Lemon Restaurant began with a passion for great food and a dream to share that passion with others. Our journey started in Chicago, where we served our first dish. From there, we've grown into a restaurant loved by locals and visitors alike.</Text>
             </Stack>
             <Stack position="relative" height="200px">

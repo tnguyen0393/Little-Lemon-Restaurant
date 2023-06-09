@@ -3,32 +3,55 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
   useDisclosure,
-  useColorModeValue,
+  Text,
   Stack,
   Image
 } from "@chakra-ui/react";
+import {Link as ReactLink} from "react-router-dom"
 import logo from "../assets/LittleLemonLogo.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faBars, faWindowClose} from "@fortawesome/free-solid-svg-icons"
 
-const links = ["Home", "About", "Menu", "Reservation", "Order Online"];
+const links = [
+  {
+      page: "Home",
+      path: "/"
+  },
+  {
+      page: "About",
+      path: "/about"
+  },
+  {
+      page: "Menu",
+      path: "/menu"
+  },
+  {
+      page: "Reservation",
+      path: "/reservation"
+  },
+  {
+      page: "Order Online",
+      path: "order-online"
+  },
+]
 
-const NavLink = ({children}) => (
-  <Link
-    paddingx={2}
-    py={1}
-    rounded={"md"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("gray.200", "gray.700"),
-    }}
-    href={"#"}>
-    {children}
-  </Link>
+const NavLink = ({children, link}) => (
+  <ReactLink to={link.path}>
+    <Text
+      paddingx={2}
+      py={1}
+      rounded={"md"}
+      _hover={{
+        textDecoration: "none",
+        bg: "#F4CE14",
+      }}>
+      {children}
+    </Text>
+  </ReactLink>
+
 );
 
 export default function Simple() {
@@ -36,7 +59,7 @@ export default function Simple() {
 
   return (
     <>
-      <Box bg={'white'} px={4} py={10}>
+      <Box bg={'white'} px={4} py={6}>
         <Container maxW={"7xl"}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           <IconButton
@@ -53,17 +76,18 @@ export default function Simple() {
               spacing={4}
               display={{ base: "none", md: "flex" }}>
               {links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
+                <ReactLink to={link.path} key={link.page}><Text key={link.page} _hover={{ textDecoration: "underline" }} color={"black"} fontWeight={"bold"} >{link.page}</Text></ReactLink>
               ))}
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
           <Button
             as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
+            fontSize={"xl"}
+            fontWeight={"bold"}
             variant={"link"}
-            href={"#"}>
+            color={"black"}
+            >
             Sign In
           </Button>
           </Flex>
