@@ -5,6 +5,7 @@ import  { Routes, Route } from 'react-router-dom';
 import Homepage from "./pages/Home";
 import Reservation from "./pages/Reservation";
 import FooterSection from './components/FooterSection';
+import UnderConstruction from './components/UnderConstruction';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
@@ -63,6 +64,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Homepage />} />
             <Route path="/reservation" element={<Reservation formik={formik} setTableReserved={setTableReserved} availableTimes={availableTimes} booked={booked} tableReserved={tableReserved}/>}/>
+            <Route path="/*" element={<UnderConstruction />} />
           </Routes>
         <FooterSection />
       </main>

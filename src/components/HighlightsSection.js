@@ -1,11 +1,11 @@
 import {Flex, Heading, Container, Button} from '@chakra-ui/react';
+import {Link as ReactLink} from "react-router-dom";
 import FoodCard from "./FoodCard";
 import greekSalad from "../assets/greek_salad.jpg";
 import bruschetta from "../assets/bruchetta.svg";
 import lemonPie from "../assets/lemon_pie.jpg";
 
 const HiglightsSection = () => {
-
   const foodItems = [
     {
       name: "Greek Salad",
@@ -31,6 +31,7 @@ const HiglightsSection = () => {
     <Container maxW={'7xl'} my={10} py={19}>
       <Flex justifyContent="space-between" alignItems="center" mb={12}>
             <Heading as="h1">This weeks Specials!</Heading>
+            <ReactLink to="/online-menu">
             <Button
                 rounded={"md"}
                 size={"lg"}
@@ -42,6 +43,7 @@ const HiglightsSection = () => {
                 _hover={{ bg: "red.500" }}>
                 Online Menu
               </Button>
+            </ReactLink>
       </Flex>
         <Flex justify="center" wrap="wrap" gap={6}>
           {foodItems.map(menuItem => {

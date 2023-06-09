@@ -8,7 +8,7 @@ const ReserveFormSection = ({formik, availableTimes, booked, setTableReserved}) 
     }
 
     return (
-        <Box py={20} my={10}>
+        <Box py={15} my={10}>
             <Container>
               <form onSubmit={formik.handleSubmit}>
                     <VStack spacing={4}>
@@ -17,6 +17,7 @@ const ReserveFormSection = ({formik, availableTimes, booked, setTableReserved}) 
                             <Input
                             id="name"
                             name="name"
+                            aria-label="Enter your name"
                             {...formik.getFieldProps("name")}
                             onChange={handleChange}
                             />
@@ -28,6 +29,7 @@ const ReserveFormSection = ({formik, availableTimes, booked, setTableReserved}) 
                             id="date"
                             name="date"
                             type="date"
+                            aria-label="Select a date"
                             {...formik.getFieldProps("date")}
                             onChange={handleChange}
                             />
@@ -35,7 +37,7 @@ const ReserveFormSection = ({formik, availableTimes, booked, setTableReserved}) 
                         </FormControl>
                         <FormControl>
                             <FormLabel htmlFor="time">Reservation Time</FormLabel>
-                            <Select id="time" name="time" {...formik.getFieldProps("time")} onChange={handleChange}>
+                            <Select id="time" name="time" aria-label="Select a time" {...formik.getFieldProps("time")} onChange={handleChange}>
                                 {availableTimes.filter(time => !booked.reservations.includes(formik.values.date+time)).map(time => {
                                     return (
                                         <option value={time} key={time}>{time}</option>
@@ -48,13 +50,14 @@ const ReserveFormSection = ({formik, availableTimes, booked, setTableReserved}) 
                             <Input
                             id="numOfGuest"
                             name="numOfGuest"
+                            aria-label="Enter the number of guests"
                             {...formik.getFieldProps("numOfGuest")}
                             onChange={handleChange}
                             />
                             <FormErrorMessage>{formik.errors.numOfGuest}</FormErrorMessage>
                         </FormControl>
                         <FormControl>
-                            <FormLabel htmlFor="ocassion">Ocassion</FormLabel>
+                            <FormLabel htmlFor="ocassion" aria-label="Select an occasion">Ocassion</FormLabel>
                             <Select id="ocassion" name="ocassion" {...formik.getFieldProps("ocassion")} onChange={handleChange}>
                                 <option value="birthday">Birthday</option>
                                 <option value="anniversary">Anniversary</option>

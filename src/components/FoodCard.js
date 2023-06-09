@@ -33,8 +33,7 @@ const FoodCard = ({menuItem}) => {
         </CardBody>
         <CardFooter>
             <Link href={"#"} _hover={{textDecoration: "none", bg: "#F4CE14", }}>
-                Order a delivery
-                <FontAwesomeIcon size={"lg"} icon={faBiking} color={'#48742C'}/>
+                Order a delivery  <FontAwesomeIcon size={"lg"} icon={faBiking} color={'#48742C'}/>
             </Link>
         </CardFooter>
     </Card>

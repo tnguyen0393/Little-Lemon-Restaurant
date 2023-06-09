@@ -65,7 +65,6 @@ const HeroSection = () => {
                   Reserve a Table
                 </Button>
                 </ReactLink>
-
             </Stack>
           </Stack>
           <Flex
