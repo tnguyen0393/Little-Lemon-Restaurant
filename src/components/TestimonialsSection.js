@@ -1,8 +1,8 @@
 import { Container, Heading, SimpleGrid, Box} from "@chakra-ui/react";
-import user1 from "../assets/user1.jpg"
-import user2 from "../assets/user2.jpg"
-import user3 from "../assets/user3.jpg"
-import user4 from "../assets/user4.jpg"
+import user1 from "../assets/User1.jpg"
+import user2 from "../assets/User2.jpg"
+import user3 from "../assets/User3.jpg"
+import user4 from "../assets/User4.jpg"
 import TestimonialCard from "./TestimonialCard";
 
 
