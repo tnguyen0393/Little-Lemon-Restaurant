@@ -15,7 +15,7 @@ const FooterSection = () => {
     const links = [
         {
             page: "Home",
-            path: "/"
+            path: "/Little-Lemon-Restaurant"
         },
         {
             page: "About",

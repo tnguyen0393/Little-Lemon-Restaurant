@@ -18,7 +18,7 @@ import {faBars, faWindowClose} from "@fortawesome/free-solid-svg-icons"
 const links = [
   {
       page: "Home",
-      path: "/"
+      path: "/Little-Lemon-Restaurant"
   },
   {
       page: "About",

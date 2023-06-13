@@ -63,6 +63,7 @@ function App() {
         <Navbar />
           <Routes>
             <Route path="/" element={<Homepage />} />
+            <Route path="/Little-Lemon-Restaurant" element={<Homepage />} />
             <Route path="/reservation" element={<Reservation formik={formik} setTableReserved={setTableReserved} availableTimes={availableTimes} booked={booked} tableReserved={tableReserved}/>}/>
             <Route path="/*" element={<UnderConstruction />} />
           </Routes>
