@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/Little-Lemon-Restaurant/static/css/main.e6c13ad2.css",
+    "main.js": "/Little-Lemon-Restaurant/static/js/main.ef9ccbb0.js",
+    "static/js/787.a2f6b77c.chunk.js": "/Little-Lemon-Restaurant/static/js/787.a2f6b77c.chunk.js",
+    "static/media/owners1.jpg": "/Little-Lemon-Restaurant/static/media/owners1.7f44c6d6e341a27d14b3.jpg",
+    "static/media/owners2.jpg": "/Little-Lemon-Restaurant/static/media/owners2.6ba0e06bfa9c1ea75109.jpg",
+    "static/media/bruchetta.svg": "/Little-Lemon-Restaurant/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek_salad.jpg": "/Little-Lemon-Restaurant/static/media/greek_salad.bed423a1fab5b210e347.jpg",
+    "static/media/restauranfood.jpg": "/Little-Lemon-Restaurant/static/media/restauranfood.e8abf5b772b6817189aa.jpg",
+    "static/media/lemon_pie.jpg": "/Little-Lemon-Restaurant/static/media/lemon_pie.2dd701d9ae09943d0cef.jpg",
+    "static/media/restaurant.jpg": "/Little-Lemon-Restaurant/static/media/restaurant.324d0f99bdf19400a0f7.jpg",
+    "static/media/construction.png": "/Little-Lemon-Restaurant/static/media/construction.a80e29a2e275cb857a3e.png",
+    "static/media/LittleLemonLogo.svg": "/Little-Lemon-Restaurant/static/media/LittleLemonLogo.f72c913c48c5334f78f2c336ec36f22b.svg",
+    "static/media/user3.jpg": "/Little-Lemon-Restaurant/static/media/user3.84fefef1452449b91835.jpg",
+    "static/media/user2.jpg": "/Little-Lemon-Restaurant/static/media/user2.c559184cfa503593797f.jpg",
+    "static/media/user1.jpg": "/Little-Lemon-Restaurant/static/media/user1.f8e6497ecd6248c822e1.jpg",
+    "static/media/user4.jpg": "/Little-Lemon-Restaurant/static/media/user4.d942cb4c61b1a21907b6.jpg",
+    "index.html": "/Little-Lemon-Restaurant/index.html",
+    "main.e6c13ad2.css.map": "/Little-Lemon-Restaurant/static/css/main.e6c13ad2.css.map",
+    "main.ef9ccbb0.js.map": "/Little-Lemon-Restaurant/static/js/main.ef9ccbb0.js.map",
+    "787.a2f6b77c.chunk.js.map": "/Little-Lemon-Restaurant/static/js/787.a2f6b77c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.ef9ccbb0.js"
+  ]
+}
